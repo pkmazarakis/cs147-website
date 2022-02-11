@@ -22,7 +22,6 @@ import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 
 // Presentation page components
@@ -36,11 +35,9 @@ import povPres from "assets/images/POVPresentation.png";
 
 import lofiReport from "assets/images/LofiReport.png";
 
-import team2 from "assets/images/TaraHeadshot.jpeg";
-
 function DesignBlocks() {
   const images = [null, needfindingPres, povPres, lofiPres, lofiReport];
-  const renderData = data.map(({ image, title, description, items }) => (
+  const renderData = data.map(({ title, description, items }) => (
     <Grid container spacing={3} sx={{ mb: 5 }} key={title}>
       <Grid item xs={12} lg={3}>
         <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>

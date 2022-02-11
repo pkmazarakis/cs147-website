@@ -58,7 +58,7 @@ function ExampleCard({ image, name, count, pro, ...rest }) {
           opacity={pro ? 0.6 : 1}
         />
       ) : (
-        <Icon style={{ alignSelf: "center" }}>{"lock"}</Icon>
+        <Icon style={{ alignSelf: "center" }}>lock</Icon>
       )}
     </MKBox>
   );
