@@ -29,6 +29,7 @@ import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 // Images
 import bgFront from "assets/images/rotating-card-bg-front.jpeg";
 import bgBack from "assets/images/rotating-card-bg-back.jpeg";
+import MKTypography from "components/MKTypography";
 
 function Information() {
   return (
@@ -42,56 +43,57 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
+                    What we
                     <br />
-                    Material Kit
+                    do at 5-9
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="Get intentional by creating social or self-care events each week"
               />
               <RotatingCardBack
                 image={bgBack}
-                title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
-                action={{
-                  type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
-                }}
+                title={
+                  <>
+                    What we
+                    <br />
+                    do at 5-9
+                  </>
+                }
+                description="Get intentional by creating social or self-care events each week"
               />
             </RotatingCard>
           </Grid>
           <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
-            <Grid container spacing={3}>
+            <MKTypography variant="h4">Our features</MKTypography>
+            <Grid container spacing={3} marginTop="8px">
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+                  icon="person"
+                  title="The right time"
+                  description="Automatically finds the right time between you and your friends to make events"
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
+                  icon="celebration"
+                  title="The right event"
+                  description="Whether its finding the right social event or stay at home task we recommend the best"
                 />
               </Grid>
             </Grid>
             <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
+                  icon="sentiment_very_satisfied"
+                  title="Get excited!"
+                  description="Have a list of all of your future events to get excited for the week and leave work with a smile"
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
+                  icon="favorite"
+                  title="Happily remember the past"
+                  description="Look at all your fond memories with stats and history posts from your 5-9 past"
                 />
               </Grid>
             </Grid>

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /**
 =========================================================
 * Material Kit 2 React - v2.0.0
@@ -30,13 +31,9 @@ function HorizontalTeamCard({ image, name, position, description }) {
       <Grid container>
         <Grid item xs={12} md={6} lg={4} sx={{ mt: -6 }}>
           <MKBox width="100%" pt={2} pb={1} px={2}>
-            <MKBox
-              component="img"
+            <img
+              style={{ objectFit: "cover", width: 100, height: 100, borderRadius: "10px" }}
               src={image}
-              alt={name}
-              width="100%"
-              borderRadius="md"
-              shadow="lg"
             />
           </MKBox>
         </Grid>

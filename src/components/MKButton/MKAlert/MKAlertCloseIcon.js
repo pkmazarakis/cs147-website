@@ -1,4 +1,4 @@
-/*
+/**
 =========================================================
 * Material Kit 2 React - v2.0.0
 =========================================================
@@ -14,22 +14,22 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Divider from "@mui/material/Divider";
+import { styled } from "@mui/material/styles";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
+export default styled("span")(({ theme }) => {
+  const { palette, typography, functions } = theme;
 
-// Material Kit 2 React examples
-import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
+  const { white } = palette;
+  const { size, fontWeightMedium } = typography;
+  const { pxToRem } = functions;
 
-function Counters() {
-  return (
-    <MKBox component="section" py={3}>
-      <Container></Container>
-    </MKBox>
-  );
-}
-
-export default Counters;
+  return {
+    color: white.main,
+    fontSize: size.xl,
+    padding: `${pxToRem(9)} ${pxToRem(6)} ${pxToRem(8)}`,
+    marginLeft: pxToRem(40),
+    fontWeight: fontWeightMedium,
+    cursor: "pointer",
+    lineHeight: 0,
+  };
+});
