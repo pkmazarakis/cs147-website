@@ -32,11 +32,12 @@ import data from "pages/Presentation/sections/data/designBlocksData";
 import needfindingPres from "assets/images/NeedfindingPresentation.png";
 import lofiPres from "assets/images/LofiPresentation.png";
 import povPres from "assets/images/POVPresentation.png";
-
 import lofiReport from "assets/images/LofiReport.png";
+import medfiPres from "assets/images/MedfiPresentation.png";
+import figmaPres from "assets/images/FigmaPresentation.png";
 
 function DesignBlocks() {
-  const images = [null, needfindingPres, povPres, lofiPres, lofiReport];
+  const images = [null, needfindingPres, povPres, lofiPres, lofiReport, medfiPres, figmaPres];
   const renderData = data.map(({ title, description, items }) => (
     <Grid container spacing={3} sx={{ mb: 5 }} key={title}>
       <Grid item xs={12} lg={3}>
