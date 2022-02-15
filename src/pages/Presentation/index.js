@@ -34,6 +34,10 @@ import needfindingPDF from "../../assets/images/NeedfindingPDF.pdf";
 import povPDF from "../../assets/images/POVPDF.pdf";
 import lofiPDF from "../../assets/images/LowfiPDF.pdf";
 import medfiPDF from "../../assets/images/MedfiPDF.pdf";
+import needfindingDownload from "../../assets/images/NeedfindingDownload.pptx";
+import povDownload from "../../assets/images/POVDownload.pptx";
+import lofiDownload from "../../assets/images/LofiDownload.pptx";
+import medfiDownload from "../../assets/images/MedfiDownload.pptx";
 
 function Presentation() {
   return (
@@ -90,11 +94,25 @@ function Presentation() {
       >
         <Information />
         <YoutubeEmbed embedId="Z2-3NQdH2Os" />
-        <a href={needfindingPDF}>Open Needfinding PDF</a>
+
+        <a href={needfindingPDF} style={{ marginTop: "24px" }}>
+          Open Needfinding PDF
+        </a>
         <a href={povPDF}>Open POV PDF</a>
         <a href={lofiPDF}>Open Lofi PDF</a>
         <a href={medfiPDF}>Open Medfi PDF</a>
-
+        <a href={needfindingDownload} download>
+          Download Needfinding PPT
+        </a>
+        <a href={povDownload} download>
+          Download POV PPT
+        </a>
+        <a href={lofiDownload} download>
+          Download Lofi PPT
+        </a>
+        <a href={medfiDownload} download>
+          Download Medfi PPT
+        </a>
         <a href="https://docs.google.com/presentation/d/1D89wKXPypSNqj8CYeZyhv8MWDXz3jXIMogdc82N4gUU/edit?usp=sharing">
           Medium Fi Presentation Link
         </a>
