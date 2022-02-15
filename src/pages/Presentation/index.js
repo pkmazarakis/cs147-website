@@ -30,6 +30,10 @@ import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import bgImage from "assets/images/TeamPhoto.jpg";
 import Team from "pages/LandingPages/AboutUs/sections/Team";
 import YoutubeEmbed from "../../components/YoutubeEmbed";
+import needfindingPDF from "../../assets/images/NeedfindingPDF.pdf";
+import povPDF from "../../assets/images/POVPDF.pdf";
+import lofiPDF from "../../assets/images/LowfiPDF.pdf";
+import medfiPDF from "../../assets/images/MedfiPDF.pdf";
 
 function Presentation() {
   return (
@@ -86,6 +90,17 @@ function Presentation() {
       >
         <Information />
         <YoutubeEmbed embedId="Z2-3NQdH2Os" />
+        <a href={needfindingPDF}>Open Needfinding PDF</a>
+        <a href={povPDF}>Open POV PDF</a>
+        <a href={lofiPDF}>Open Lofi PDF</a>
+        <a href={medfiPDF}>Open Medfi PDF</a>
+
+        <a href="https://docs.google.com/presentation/d/1D89wKXPypSNqj8CYeZyhv8MWDXz3jXIMogdc82N4gUU/edit?usp=sharing">
+          Medium Fi Presentation Link
+        </a>
+        <a href="https://www.figma.com/proto/uBLVQDmFF5ag5zojXDysoG/CS147-Med-Fi-Prototype?node-id=55%3A363&scaling=scale-down&page-id=0%3A1&starting-point-node-id=55%3A363&show-proto-sidebar=1">
+          Medium Fi Figma Link
+        </a>
         <DesignBlocks />
         <Team />
       </Card>

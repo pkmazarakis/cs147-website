@@ -71,12 +71,6 @@ function DesignBlocks() {
 
   return (
     <MKBox component="section" my={6} py={6}>
-      <a href="https://docs.google.com/presentation/d/1D89wKXPypSNqj8CYeZyhv8MWDXz3jXIMogdc82N4gUU/edit?usp=sharing">
-        Medium Fi Presentation Link
-      </a>
-      <a href="https://www.figma.com/proto/uBLVQDmFF5ag5zojXDysoG/CS147-Med-Fi-Prototype?node-id=55%3A363&scaling=scale-down&page-id=0%3A1&starting-point-node-id=55%3A363&show-proto-sidebar=1">
-        Medium Fi Figma Link
-      </a>
       <Container sx={{ mt: 6 }}>{renderData}</Container>
     </MKBox>
   );
