@@ -69,7 +69,7 @@ function Team() {
                 image={team2}
                 name="Tara Parekh"
                 position={{ color: "info", label: "Designer" }}
-                description="lorem ipsum"
+                description="Symbolic systems major. Loves love and wants to build products around it"
               />
             </MKBox>
           </Grid>
@@ -79,7 +79,7 @@ function Team() {
                 image={team3}
                 name="Amy Zhang"
                 position={{ color: "info", label: "Designer" }}
-                description="lorem ipsum"
+                description="CS major that loves to build machine learning models to solve intense problems"
               />
             </MKBox>
           </Grid>
@@ -89,7 +89,7 @@ function Team() {
                 image={team4}
                 name="Anooshree Sengupta"
                 position={{ color: "info", label: "Developer" }}
-                description="lorem ipsum"
+                description="CS major and Sociology minor. Excited about making post-grad life stress-free!"
               />
             </MKBox>
           </Grid>
