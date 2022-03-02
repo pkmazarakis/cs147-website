@@ -23,6 +23,15 @@ import Tooltip from "@mui/material/Tooltip";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import Icon from "@mui/material/Icon";
+import { Button } from "@mui/material";
+// import needfindingPDF from "../../assets/images/NeedfindingPDF.pdf";
+import povPDF from "../../../../assets/images/POVPDF.pdf";
+// import lofiPDF from "../../assets/images/LowfiPDF.pdf";
+// import medfiPDF from "../../assets/images/MedfiPDF.pdf";
+// import needfindingDownload from "../../assets/images/NeedfindingDownload.pptx";
+// import povDownload from "../../assets/images/POVDownload.pptx";
+// import lofiDownload from "../../assets/images/LofiDownload.pptx";
+// import medfiDownload from "../../assets/images/MedfiDownload.pptx";
 
 function ExampleCard({ image, name, count, pro, ...rest }) {
   const imageTemplate = (
@@ -75,10 +84,23 @@ function ExampleCard({ image, name, count, pro, ...rest }) {
       {name || count > 0 ? (
         <MKBox mt={1} ml={1} lineHeight={1}>
           {name && (
-            <MKTypography variant="h6" fontWeight="bold">
+            <MKTypography
+              variant="h6"
+              fontWeight="bold"
+              style={{ alignSelf: "center", textAlign: "center", marginBottom: "16px" }}
+            >
               {name}
             </MKTypography>
           )}
+          <div style={{ justifyContent: "space-around", flex: 1, display: "flex" }}>
+            {/* <Button variant="contained" style={{ color: "white" }}> */}
+            <a href={povPDF}>Open</a>
+            {/* </Button> */}
+
+            <Button variant="contained" style={{ color: "white" }}>
+              Download
+            </Button>
+          </div>
         </MKBox>
       ) : null}
     </MKBox>
